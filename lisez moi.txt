@@ -1,0 +1,36 @@
+project Campfire
+
+concept du projet :
+un RPG basé sur l'univers du Scoutisme
+le but est de gerer un camp de scout. 
+
+les joueurs jouent le role des animateurs (respos)ils doivent mener des activités le jour et proteger les enfants la nuit
+les enfants sont ici pour s'amuser. le moral de chacun donne la note de fin de camp
+les terreurs sont des monstres qui apparaissent uniquement la nuit. leurs but est de se nourrir des peurs humaines 
+
+chaque personnage joueur possède un totem (classe) avec un adjectif (talent)
+chaque totem possède des talents utile le jour et la nuit
+l'adjectif modifie le totem de base en incluant des bonus
+ 
+cycle double phase jour/nuit
+le gameplay du jour se joue en temps reel
+les enfants suivent le planning des respos.
+le planning est un ensemble d'objectifs journaliers qui altère l'état des enfants/respos/terreurs.
+les respos gèrent eux même le planning
+les respos peuvent soigner/fabriquer/installer des lieux/faire une activité
+chaque action des respos coute du temps/energie/materiel
+
+la nuit, le gameplay change en jeu de strategie du même style que Dofus. 
+les respos ont pour objectif de vaincre les terreurs qui vont detruire le camp
+les terreurs deviennent de plus en plus fort au fil du temps
+les malus des enfants attire les terreurs
+chaque terreur represente et inflige un type de peur prédéfini
+si une terreur atteint un enfant, il obtient un malus qui handicap le groupe
+un respo peux s'occuper d'un enfant terrifié pour reduire le malus
+
+objectif du jeu: obtenir la meilleur note de fin de camp
+note de camp = XP
+    
+    vue isometrique 16bit (style ffta)
+    vue 3d 1ere personne (style tes)
+    vue 2d 3eme personne 16bit (style suikoden)
