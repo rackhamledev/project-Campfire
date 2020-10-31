@@ -1,0 +1,208 @@
+project Campfire
+
+concept du projet :
+un RPG basé sur l'univers du Scoutisme
+le but est de gerer un camp de scout. 
+
+les joueurs jouent le role des animateurs (respos)ils doivent mener des activités le jour et proteger les enfants la nuit
+les enfants sont ici pour s'amuser. le moral de chacun donne la note de fin de camp
+les terreurs sont des monstres qui apparaissent uniquement la nuit. leurs but est de se nourrir des peurs humaines 
+
+chaque personnage joueur possède un totem (classe) avec un adjectif (talent)
+chaque totem possède des talents utile le jour et la nuit
+l'adjectif modifie le totem de base en incluant des bonus
+ 
+cycle double phase jour/nuit
+le gameplay du jour se joue en temps reel
+les enfants suivent le planning des respos.
+le planning est un ensemble d'objectifs journaliers qui altère l'état des enfants/respos/terreurs.
+les respos gèrent eux même le planning
+les respos peuvent soigner/fabriquer/installer des lieux/faire une activité
+chaque action des respos coute du temps/energie/materiel
+
+la nuit, le gameplay change en jeu de strategie du même style que Dofus. 
+les respos ont pour objectif de vaincre les terreurs qui vont detruire le camp
+les terreurs deviennent de plus en plus fort au fil du temps
+les malus des enfants attire les terreurs
+chaque terreur represente et inflige un type de peur prédéfini
+si une terreur atteint un enfant, il obtient un malus qui handicap le groupe
+un respo peux s'occuper d'un enfant terrifié pour reduire le malus
+
+objectif du jeu: obtenir la meilleur note de fin de camp
+note de camp = XP
+    
+    vue isometrique 32bit (style ffta)
+
+    statistiques
+        respo
+            PV 
+            PM 
+            calme/enervé
+            energie
+            force
+            vitesse
+            moral
+            bricole
+            animation
+
+        enfant
+            peur
+            faim
+            energie
+            bonheur
+
+        terreur
+            PV
+            PM
+            force
+            vitesse
+
+        bonus/malus
+            respo
+                encouragé (ameliore la force et la vitesse)
+                concentration
+                booster (ameliore le bricolo et l'animation)
+
+                infection
+                mal de ventre
+                malade
+                colère
+                angoisse
+                déprime(le niveau  de bonheur reduit au fil du temps. si le score de morale atteint 0, rajoute l'angoisse)
+                fragile (prochainne reduction des PM inflige un malus aléatoire, 1 fois)
+            enfant
+                encouragé (la peur reduit, le bonheur gagné est multiplié par 2)
+                dietétique (le niveau de faim reduit plus lentement)
+
+                infection
+                mal de ventre (le niveau de fatigue max est divisé par 2)
+                malade 
+                malbouffe (le niveau d'energie reduit plus rapidement)
+                colère
+                angoisse (ne peux plus rien faire, reduit le niveau de bonheur des autre enfants présent)
+                pessimiste (le niveau  de bonheur reduit au fil du temps. si le score de bonheur atteint 0, rajoute l'angoisse)
+                provoc
+                fragile
+
+            terreur
+            infection
+            mal de ventre
+            malbouffe
+            déprime
+            colère
+            angoisse
+            provoc
+            fragile
+
+
+    totem:
+        ours (guerrier spécialisé dans la bricole)
+            (voleur spécialisé dans les activités generales)
+            (magicien spécialisé dans les histoires et les chants)
+        lion
+        panthere
+        puma
+        guépar
+        chat
+        triton
+        salamandre
+        antilope
+        oryx
+        scorpion
+        tarentule
+        alpaga
+        elephant
+        girafe
+        okapi
+        bison
+        buffle
+        auroch
+        yack
+        chien
+        loup
+        renard
+        tanuki
+        belier
+        mouflon
+        cerf
+        dauphin
+        chauve-souris
+        crabe
+        ibis
+        grue
+        cheval
+        zebre
+        abeille
+        coccinelle
+        sauterelle
+        scarabée
+        papillon
+        herisson
+        kangourou
+        pieuvre
+        corail
+        loutre
+        carcajou
+        cygne
+        pélican
+        corbeau
+        chouette
+        colibri
+        hirondelle
+        rossingnol
+        espadon
+        raie-manta
+        sanglier
+        aigle
+        epervier
+        cobra
+        anaconda
+        iguane
+        vipère
+        castor
+        ecureuil
+        lièvre
+        grizzly
+        colombe
+
+
+
+    terreurs:
+        administrativophobie (vise la tente de l'administration et fout le bordel dedant)
+        achluophobie (vise un enfant et le reveil d'un cauchemard)
+        acharophobie (peur des acariens)
+        algophobie (peur de la douleur)
+        antropophobie (peur des autres)
+        anginophobie (peur de l'etouffement)
+        apiphobie (peur des abeilles)
+        aquaphobie (peur de l'eau)
+        astraphobie (peur du tonnerre)
+        atélophobie (peur de ne pas etre assez bien)
+        athazagoraphobie (peur d'être oublié)
+        autophobie (peur de la solitude)
+        bacillophobie (peur des bactéries)
+        basophobie (peur de se casser la gueule)
+        blemmophobie ( peur du regard des autres)
+        claustrophobie (peur des espaces confinés)
+        germophobie (peur des germes)
+        hématophobe (peur de la vue du sang)
+        hydrophobie (peur morbide de l'eau)
+        hylophobie (peur des forets)
+        kéraunophobie (peur morbide de la foudre)
+        mysophobie (peur de la saleté)
+        néophobie (peur des nouveautés)
+        nosophobie (peur de la maladie)
+        ochlophobie (peur de la foule)
+        pédophobie (peur des enfants)
+        pharmacophobie (peur des medocs)
+        phasmophobie (peur des fantomes)
+        pyrophobie (peur du feu)
+        scopophobie (peur du regard des autres)
+        somniphobie (peur de dormir)
+        entomophobie (peur des insects)
+        agrizoophobie (peur des animaux sauvages)
+        amnésiphobie (peur de perdre la memoire)
+        amychophobie (peur d'avoir un accident)
+        androphobie (peur des hommes)
+        ataxophobie (peur du desordre)
+        
