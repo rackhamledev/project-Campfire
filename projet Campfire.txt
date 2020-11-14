@@ -3,6 +3,8 @@ project Campfire
 concept du projet :
 un RPG basé sur l'univers du Scoutisme
 le but est de gerer un camp de scout. 
+utlisation du moteur de jeu GODOT
+vue isometrique 32bit (style ffta)
 
 les joueurs jouent le role des animateurs (respos)ils doivent mener des activités le jour et proteger les enfants la nuit
 les enfants sont ici pour s'amuser. le moral de chacun donne la note de fin de camp
@@ -31,7 +33,7 @@ un respo peux s'occuper d'un enfant terrifié pour reduire le malus
 objectif du jeu: obtenir la meilleur note de fin de camp
 note de camp = XP
     
-    vue isometrique 32bit (style ffta)
+   
 
     statistiques
         respo
