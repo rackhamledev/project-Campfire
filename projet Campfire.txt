@@ -208,3 +208,21 @@ note de camp = XP
         androphobie (peur des hommes)
         ataxophobie (peur du desordre)
         
+ecran d'accueil
+    play
+        solo
+        multi
+        précedent
+    avatar
+        competences
+        apparence
+        equipement
+        haut fait
+        stats
+        précedent
+    option
+        video
+        audio
+        touches
+        précedent
+    quitter
