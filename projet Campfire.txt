@@ -30,10 +30,18 @@ chaque terreur represente et inflige un type de peur prédéfini
 si une terreur atteint un enfant, il obtient un malus qui handicap le groupe
 un respo peux s'occuper d'un enfant terrifié pour reduire le malus
 
+réalisation d'un site/forum cryptique dans l'univers du jeu pour faire la promotion
 objectif du jeu: obtenir la meilleur note de fin de camp
 note de camp = XP
     
-   
+    equipements
+        relique ( talisman(attaque), fétiche (piège) totem(zone), bracelet(protec), )
+        outil (pioche, opinel, smartphone, marteau, planche a dessin)
+        arme (baton, livre, baguette, instrument, stylo, cartes)
+        bague 
+        collier
+        sac (sac de secouriste, sac a dos, sac de 5ème, sac de voyage)
+
 
     statistiques
         respo
@@ -100,7 +108,8 @@ note de camp = XP
     totem:
         ours (guerrier spécialisé dans la bricole)
             (voleur spécialisé dans les activités generales)
-            (magicien spécialisé dans les histoires et les chants)
+            (mage spécialisé dans les histoires et les chants)
+            (dessinateur qui lances des altérations d'états grace à ses dessins)
         lion
         panthere
         puma
@@ -121,7 +130,7 @@ note de camp = XP
         auroch
         yack
         chien
-        loup
+        loup (chef d'équipe neutre en tout, donne des buffs a ses equipiers qui deviens plus balèze selon la taille de son equippe)
         renard
         tanuki
         belier
