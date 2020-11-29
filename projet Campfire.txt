@@ -45,15 +45,15 @@ note de camp = XP
 
     statistiques
         respo
-            PV 
-            PM 
-            calme/enervé
-            energie
-            force
-            vitesse
-            moral
-            bricole
-            animation
+            PV (point de vie. à zero, hors combat. lorsqu'il reviens, il obtient le statut bléssée)
+            PM  (point de magie, sert à utiliser des competences de combats )
+            energie (sur 100. réduit quand il utilise certaines competences. à zero, reduit la vitesse et la force)
+            calme/enervé (determine le taux de réussite )
+            force (determine le temps des epreuves physiques le jour, determine les dégats physique la nuit)
+            savoir ( utile pour certains evenements, determine les degats magique la nuit)
+            vitesse (determine la vitesse de déplaement le jour, l'ordre des tours la nuit)
+            bricole (determine la capacité à fabriquer/réparer des objets)
+            animation (determine l'éfficacité des activités le jour)
 
         enfant
             peur
@@ -72,6 +72,13 @@ note de camp = XP
                 encouragé (ameliore la force et la vitesse)
                 concentration
                 booster (ameliore le bricolo et l'animation)
+                effrayé (bloque sur un tour)
+                bléssé mal de crane( blessure de mal de resurection - savoir divisé par 2)
+                bléssé entorse ( vitesse divisé par 2)
+                bléssé saignement (force divisé par 2)
+                bléssé accoufène (taux d'enervement qui monte plus rapidment)
+                bléssé brulure
+
 
                 infection
                 mal de ventre
@@ -82,24 +89,24 @@ note de camp = XP
                 fragile (prochainne reduction des PM inflige un malus aléatoire, 1 fois)
             enfant
                 encouragé (la peur reduit, le bonheur gagné est multiplié par 2)
+                amourette
                 dietétique (le niveau de faim reduit plus lentement)
-
                 infection
                 mal de ventre (le niveau de fatigue max est divisé par 2)
                 malade 
                 malbouffe (le niveau d'energie reduit plus rapidement)
                 colère
                 angoisse (ne peux plus rien faire, reduit le niveau de bonheur des autre enfants présent)
-                pessimiste (le niveau  de bonheur reduit au fil du temps. si le score de bonheur atteint 0, rajoute l'angoisse)
+                pessimiste (le niveau  de bonheur reduit au fil du temps. si le score de bonheur atteint 0, rajoute angoisse)
                 provoc
                 fragile
 
-            terreur
+            terrorisér
             infection
             mal de ventre
             malbouffe
             déprime
-            colère
+            colère (mod berzerk)
             angoisse
             provoc
             fragile
@@ -130,7 +137,7 @@ note de camp = XP
         auroch
         yack
         chien
-        loup (chef d'équipe neutre en tout, donne des buffs a ses equipiers qui deviens plus balèze selon la taille de son equippe)
+        loup (chef d'équipe, donne des buffs a ses equipiers qui deviens plus balèze selon la taille de son equippe)
         renard
         tanuki
         belier
@@ -218,9 +225,20 @@ note de camp = XP
         ataxophobie (peur du desordre)
         
 ecran d'accueil
-    play
-        solo
-        multi
+
+    solo
+        choix de la sauvegarde
+            continuer
+            suprimer
+            précédent
+        nouveau
+            création d'une nouvelle partie
+    multi
+        connexion
+            rejoindre un campement public
+            rejoindre un campement privée
+            creer un campement
+                inviter mes potes ou partie public
         précedent
     avatar
         competences
@@ -231,7 +249,19 @@ ecran d'accueil
         précedent
     option
         video
+            format d'écran
+            écran fenetré
+            SFX
         audio
-        touches
+            volume générale
+            volume musique
+            volume bruitage
+            choix des musiques
+                musique originales
+                vos musiques
+        controle
+            manettes
+            clavier souris
+            personnaliser mes touches
         précedent
     quitter
